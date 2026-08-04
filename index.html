@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>La More Eventos - Gestão, Bilheteria e Cashless</title>
-    <meta name="description" content="A revolução na gestão do seu evento. Bilheteria digital, cartão de consumo cashless, PDV e controle total.">
+    <title>La More Eventos - Bilheteria e Consumo Digital</title>
+    <meta name="description" content="A revolução na gestão do seu evento. Bilheteria digital e cartão de consumo inteligente por QR Code. Sem hardwares, sem filas.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
@@ -21,8 +21,8 @@
 
     <nav class="navbar">
         <div class="logo">
-            <i class="fa-solid fa-bolt"></i>
-            <span>La More Eventos</span>
+            <img src="logo.png" alt="La More Eventos Logo" style="height: 40px;">
+            <span style="display:none;">La More Eventos</span> <!-- Oculto pois a logo já diz o nome, ou manteremos se a logo for só ícone. Pela logo que conheço, tem texto. -->
         </div>
         <div class="nav-links">
             <a href="bilheteria.html" class="nav-link" style="color: #fff; font-weight: 600; text-transform: uppercase; font-size: 0.9rem; letter-spacing: 1px;"><i class="fa-solid fa-ticket"></i> Módulo Bilheteria</a>
@@ -38,10 +38,10 @@
         <!-- Hero Section -->
         <section class="hero">
             <div class="hero-content fadeIn">
-                <span class="badge">Gestão Inteligente para Produtores</span>
-                <h1>A revolução na gestão do <span>Seu Evento</span></h1>
+                <span class="badge">A Revolução é Digital</span>
+                <h1>Gestão Inteligente para <span>Eventos</span></h1>
                 <p>
-                    Venda online, controle de portaria, bar 100% digital e impressão de fichas. Tenha tudo conectado em uma única plataforma desenvolvida para maximizar seus lucros e eliminar filas.
+                    Venda de ingressos online, controle de portaria sem gargalos e bar 100% digital. Abandone hardwares obsoletos, elimine as fraudes e maximize os seus lucros apenas com tecnologia de ponta no celular.
                 </p>
                 
                 <div class="hero-stats">
@@ -50,12 +50,12 @@
                         <span>Bilheteria</span>
                     </div>
                     <div class="stat-item">
-                        <i class="fa-solid fa-credit-card"></i>
-                        <span>Cashless</span>
+                        <i class="fa-solid fa-mobile-screen-button"></i>
+                        <span>100% Digital</span>
                     </div>
                     <div class="stat-item">
-                        <i class="fa-solid fa-cash-register"></i>
-                        <span>PDV Integrado</span>
+                        <i class="fa-solid fa-qrcode"></i>
+                        <span>QR Code</span>
                     </div>
                 </div>
             </div>
@@ -99,61 +99,8 @@
             </div>
         </section>
 
-        <!-- Seção 3 Pilares -->
-        <section class="features-section" style="padding: 8rem 0 4rem; border-top: 1px solid var(--glass-border); margin-top: 4rem;">
-            <div style="text-align: center; margin-bottom: 5rem;">
-                <span class="badge">Ecossistema Completo</span>
-                <h2 style="font-size: 3rem; margin-bottom: 1rem; color: #fff;">Tudo que o seu evento precisa</h2>
-                <p style="color: var(--text-muted); font-size: 1.25rem; max-width: 600px; margin: 0 auto;">Da venda do ingresso até a última bebida no bar, garantimos velocidade e segurança.</p>
-            </div>
-            
-            <div class="features-grid">
-                <!-- Bilheteria -->
-                <div class="glass-card feature-card">
-                    <div class="feature-icon icon-blue">
-                        <i class="fa-solid fa-qrcode"></i>
-                    </div>
-                    <h3>Bilheteria Digital</h3>
-                    <p>Venda ingressos online ou na portaria com rapidez. Leitura de QR Code instantânea pelo celular ou coletor, evitando filas e fraudes na entrada.</p>
-                    <ul class="feature-list">
-                        <li><i class="fa-solid fa-check"></i> Link de vendas personalizado</li>
-                        <li><i class="fa-solid fa-check"></i> Controle de lotes automático</li>
-                        <li><i class="fa-solid fa-check"></i> Check-in ultrarrápido offline</li>
-                    </ul>
-                </div>
-
-                <!-- Cashless -->
-                <div class="glass-card feature-card highlight-card">
-                    <div class="feature-icon icon-pink">
-                        <i class="fa-solid fa-wifi"></i>
-                    </div>
-                    <h3>Cartão de Consumo & RFID</h3>
-                    <p>Transforme o bar em uma máquina de vendas. Clientes carregam o cartão ou pulseira RFID e pagam apenas aproximando. Zero perda de troco, zero dor de cabeça.</p>
-                    <ul class="feature-list">
-                        <li><i class="fa-solid fa-check"></i> Pulseiras e Cartões NFC/RFID</li>
-                        <li><i class="fa-solid fa-check"></i> Autoatendimento nos totens</li>
-                        <li><i class="fa-solid fa-check"></i> Aumento de 30% no consumo médio</li>
-                    </ul>
-                </div>
-                
-                <!-- POS / Fichas -->
-                <div class="glass-card feature-card">
-                    <div class="feature-icon icon-green">
-                        <i class="fa-solid fa-receipt"></i>
-                    </div>
-                    <h3>Impressão de Fichas (POS)</h3>
-                    <p>Nossas Smart POS funcionam como caixas móveis. Os garçons e caixas imprimem fichas de bebidas e porções em qualquer lugar da festa.</p>
-                    <ul class="feature-list">
-                        <li><i class="fa-solid fa-check"></i> Caixas móveis sem cabos</li>
-                        <li><i class="fa-solid fa-check"></i> Impressora integrada</li>
-                        <li><i class="fa-solid fa-check"></i> Fechamento de caixa no sistema</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-
-        <!-- Consumo Digital Inteligente (Impact Section) -->
-        <section class="impact-section" style="padding: 8rem 0; background: linear-gradient(135deg, rgba(17,24,39,0.8), rgba(11,15,25,0.9)); border-top: 1px solid rgba(255,255,255,0.05); border-bottom: 1px solid rgba(255,255,255,0.05); position: relative; overflow: hidden;">
+        <!-- Consumo Digital Inteligente (Impact Section) - Agora no topo dos destaques -->
+        <section class="impact-section" style="padding: 8rem 0; background: linear-gradient(135deg, rgba(17,24,39,0.8), rgba(11,15,25,0.9)); border-top: 1px solid rgba(255,255,255,0.05); border-bottom: 1px solid rgba(255,255,255,0.05); position: relative; overflow: hidden; margin-top: 4rem;">
             <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: radial-gradient(circle at 70% 50%, rgba(236,72,153,0.08), transparent 50%); pointer-events: none;"></div>
             
             <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 5rem; align-items: center;">
@@ -164,11 +111,11 @@
                         Consumo Digital <span style="background: linear-gradient(135deg, var(--secondary), #f472b6); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Inteligente</span>
                     </h2>
                     <p style="color: var(--text-muted); font-size: 1.25rem; line-height: 1.7; margin-bottom: 2.5rem;">
-                        Esqueça as filas enormes para comprar ou recarregar cartões. Elimine de vez as fraudes e a perda de comandas. 
+                        Esqueça as filas enormes para comprar ou recarregar cartões. Elimine de vez as fraudes, a logística cara de hardwares e a perda de comandas. 
                         <br><br>
-                        Com o nosso <strong>App de Operador de Bar</strong>, o celular do seu garçom ou caixa se transforma em um PDV completo. O cliente acessa seu QR Code direto no celular (ou recebe impresso) e o operador debita o consumo em segundos, usando apenas a câmera. 
+                        Com o nosso <strong>App de Operador de Bar</strong>, o celular do seu garçom ou caixa se transforma em um PDV completo. O cliente acessa o QR Code de consumo direto no próprio celular e o operador debita o pedido em segundos usando apenas a câmera. 
                         <br><br>
-                        <strong style="color: #fff;">Velocidade máxima no bar, fechamento transparente e lucro garantido para o evento.</strong>
+                        <strong style="color: #fff;">100% digital, velocidade máxima no bar, fechamento transparente e lucro garantido para o evento.</strong>
                     </p>
                     <a href="https://wa.me/55?text=Quero%20saber%20mais%20sobre%20o%20Consumo%20Digital!" target="_blank" class="btn btn-gradient">
                         <i class="fa-brands fa-whatsapp"></i> Agendar Demonstração
@@ -187,22 +134,41 @@
             </div>
         </section>
 
-        <!-- Seção Equipamentos -->
-        <section class="equipamentos-section" style="padding: 6rem 0;">
-            <div class="glass-card banner-equipamentos">
-                <div class="banner-content">
-                    <h2>Hardware de Alta Performance</h2>
-                    <p>Fornecemos ou homologamos as melhores tecnologias do mercado para que a operação da sua casa não pare nunca.</p>
-                    <div class="hw-list">
-                        <div class="hw-item"><i class="fa-solid fa-tablet-screen-button"></i> Totens de Autoatendimento</div>
-                        <div class="hw-item"><i class="fa-solid fa-cash-register"></i> Smart POS Modernas</div>
-                        <div class="hw-item"><i class="fa-solid fa-id-card-clip"></i> Cartões VIP PVC</div>
-                        <div class="hw-item"><i class="fa-solid fa-ring"></i> Pulseiras RFID</div>
+        <!-- Seção de Recursos Focados (Sem Equipamentos) -->
+        <section class="features-section" style="padding: 6rem 0 4rem;">
+            <div style="text-align: center; margin-bottom: 5rem;">
+                <span class="badge" style="background: rgba(59, 130, 246, 0.15); color: #60a5fa; border-color: rgba(59, 130, 246, 0.3);">Ecossistema Conectado</span>
+                <h2 style="font-size: 3rem; margin-bottom: 1rem; color: #fff;">Inovação na Palma da Mão</h2>
+                <p style="color: var(--text-muted); font-size: 1.25rem; max-width: 600px; margin: 0 auto;">Nossa plataforma une inteligência e simplicidade para fazer o seu evento rodar de forma lisa.</p>
+            </div>
+            
+            <div class="features-grid" style="grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));">
+                <!-- Bilheteria -->
+                <div class="glass-card feature-card">
+                    <div class="feature-icon icon-blue">
+                        <i class="fa-solid fa-qrcode"></i>
                     </div>
+                    <h3>Bilheteria Integrada</h3>
+                    <p>Venda ingressos online com rapidez. Leitura de QR Code instantânea pelo celular do porteiro, validando ingressos em milissegundos sem depender de catracas caras.</p>
+                    <ul class="feature-list">
+                        <li><i class="fa-solid fa-check"></i> Link de vendas personalizado</li>
+                        <li><i class="fa-solid fa-check"></i> Controle de lotes automático</li>
+                        <li><i class="fa-solid fa-check"></i> Check-in ultrarrápido</li>
+                    </ul>
                 </div>
-                <div class="banner-images">
-                    <img src="totem.png" alt="Totem PDV Autoatendimento" class="img-float-1">
-                    <img src="pos.png" alt="Máquina POS Inteligente" class="img-float-2">
+
+                <!-- Consumo -->
+                <div class="glass-card feature-card highlight-card">
+                    <div class="feature-icon icon-pink">
+                        <i class="fa-solid fa-mobile-screen"></i>
+                    </div>
+                    <h3>Gestão de Consumo pelo Celular</h3>
+                    <p>O cliente gerencia o próprio saldo pelo celular, sem pegar filas para recarga. Sem fichas impressas caindo no chão, sem cartões plásticos perdidos. O futuro é agora.</p>
+                    <ul class="feature-list">
+                        <li><i class="fa-solid fa-check"></i> Zero hardware proprietário</li>
+                        <li><i class="fa-solid fa-check"></i> Recarga via PIX instantânea</li>
+                        <li><i class="fa-solid fa-check"></i> Acompanhamento em tempo real</li>
+                    </ul>
                 </div>
             </div>
         </section>
@@ -213,8 +179,7 @@
     <footer class="footer-section">
         <div class="footer-content">
             <div class="footer-logo">
-                <i class="fa-solid fa-bolt" style="color: var(--primary); font-size: 1.5rem;"></i>
-                <span style="font-weight: 800; font-size: 1.5rem; color: #fff;">La More Eventos</span>
+                <img src="logo.png" alt="La More Eventos Logo" style="height: 30px;">
             </div>
             <p style="margin-bottom: 1.5rem;"><strong>Direito de Uso e Exclusividade:</strong> O conteúdo, design e o sistema disponibilizado neste site possuem proteção autoral e direitos de uso exclusivos da La More Eventos. É vedada a reprodução e uso não-autorizado.</p>
             <p style="margin-bottom: 1.5rem;"><strong>Aviso de Proteção de Dados (LGPD):</strong> Valorizamos e respeitamos seus dados. De acordo com a Lei Geral de Proteção de Dados (Lei nº 13.709/18), asseguramos que os dados cadastrados neste site serão usados unicamente para nosso contato com você para apresentar nossos serviços. Suas informações não serão compartilhadas ou vendidas para terceiros sob nenhuma hipótese.</p>
