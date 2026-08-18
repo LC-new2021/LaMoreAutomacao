@@ -88,14 +88,14 @@ body {
 }
 
 /* ==========================================================================
-   NAVBAR (DESKTOP & 2-ROW MOBILE LAYOUT)
+   NAVBAR (DESKTOP & 2-ROW COMPACT MOBILE LAYOUT)
    ========================================================================== */
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0.85rem 5%;
-    background: rgba(11, 15, 25, 0.9);
+    background: rgba(11, 15, 25, 0.92);
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
     border-bottom: 1px solid var(--glass-border);
@@ -158,14 +158,14 @@ body {
 .btn-bilheteria {
     display: inline-flex;
     align-items: center;
-    gap: 8px;
-    padding: 0.65rem 1.25rem;
+    gap: 7px;
+    padding: 0.6rem 1.15rem;
     border-radius: 12px;
     background: rgba(59, 130, 246, 0.12);
     border: 1px solid rgba(59, 130, 246, 0.35);
     color: #93c5fd;
     font-weight: 700;
-    font-size: 0.88rem;
+    font-size: 0.86rem;
     text-decoration: none;
     text-transform: uppercase;
     letter-spacing: 0.5px;
@@ -183,20 +183,20 @@ body {
 
 .btn-bilheteria i {
     color: #60a5fa;
-    font-size: 0.95rem;
+    font-size: 0.92rem;
 }
 
 /* Botão WhatsApp / Consultor */
 .btn-consultor {
     display: inline-flex;
     align-items: center;
-    gap: 8px;
-    padding: 0.65rem 1.35rem;
+    gap: 7px;
+    padding: 0.6rem 1.2rem;
     border-radius: 12px;
     background: var(--success);
     color: #ffffff;
     font-weight: 700;
-    font-size: 0.88rem;
+    font-size: 0.86rem;
     text-decoration: none;
     cursor: pointer;
     transition: all 0.25s ease;
@@ -212,7 +212,7 @@ body {
 }
 
 .btn-consultor i {
-    font-size: 1.1rem;
+    font-size: 1.05rem;
 }
 
 /* ==========================================================================
@@ -784,14 +784,14 @@ body {
 }
 
 /* ==========================================================================
-   MOBILE RESPONSIVE RULES (2-ROW SPACIOUS NAVBAR)
+   MOBILE RESPONSIVE RULES (2-ROW COMPACT NAVBAR & PEQUENINOS BUTTONS)
    ========================================================================== */
 @media (max-width: 768px) {
     .navbar {
         height: auto;
-        padding: 0.75rem 4% 0.75rem;
+        padding: 0.6rem 4% 0.6rem;
         flex-direction: column;
-        gap: 10px;
+        gap: 6px;
         box-shadow: 0 4px 20px rgba(0, 0, 0, 0.7);
     }
 
@@ -799,48 +799,60 @@ body {
         width: 100%;
         display: flex;
         justify-content: flex-start;
+        align-items: center;
+    }
+
+    .logo-link {
+        gap: 8px;
     }
 
     .logo-img {
-        height: 40px;
+        height: 36px;
     }
 
     .logo-text {
-        font-size: 1.25rem;
+        font-size: 1.15rem;
     }
 
-    /* Linha de Botões Abaixo */
+    /* Linha de Botões Abaixo (Pequenininhos, Elegantes e Discretos) */
     .nav-actions-row {
         width: 100%;
         display: flex;
         align-items: center;
         justify-content: space-between;
-        gap: 10px;
+        gap: 8px;
     }
 
-    /* Botão Bilheteria à Esquerda na Linha de Baixo */
+    /* Botão Bilheteria Pequenininho à Esquerda */
     .btn-bilheteria {
         flex: 1;
         justify-content: center;
-        padding: 0.65rem 0.5rem;
-        font-size: 0.82rem;
-        border-radius: 11px;
-        gap: 6px;
+        padding: 0.38rem 0.6rem;
+        font-size: 0.74rem;
+        border-radius: 9px;
+        gap: 5px;
+        letter-spacing: 0.2px;
+    }
+    .btn-bilheteria i {
+        font-size: 0.78rem;
     }
 
-    /* Botão WhatsApp / Consultor à Direita na Linha de Baixo */
+    /* Botão WhatsApp / Consultor Pequenininho à Direita */
     .btn-consultor {
         flex: 1;
         justify-content: center;
-        padding: 0.65rem 0.5rem;
-        font-size: 0.82rem;
-        border-radius: 11px;
-        gap: 6px;
+        padding: 0.38rem 0.6rem;
+        font-size: 0.74rem;
+        border-radius: 9px;
+        gap: 5px;
+    }
+    .btn-consultor i {
+        font-size: 0.88rem;
     }
 
     /* Container com espaçamento proporcional */
     .container {
-        padding: 145px 4% 3rem;
+        padding: 130px 4% 3rem;
     }
 
     .hero {
@@ -849,7 +861,7 @@ body {
     }
 
     .hero-content h1 {
-        font-size: 2.2rem;
+        font-size: 2.1rem;
         letter-spacing: -0.5px;
         margin-bottom: 1rem;
     }
@@ -864,8 +876,8 @@ body {
     }
 
     .stat-item {
-        padding: 0.55rem 0.85rem;
-        font-size: 0.85rem;
+        padding: 0.5rem 0.8rem;
+        font-size: 0.82rem;
         border-radius: 10px;
     }
 
@@ -875,11 +887,11 @@ body {
     }
 
     .form-header h3 {
-        font-size: 1.4rem;
+        font-size: 1.35rem;
     }
 
     .impact-section {
-        padding: 3.5rem 0;
+        padding: 3rem 0;
         border-radius: 20px;
         margin-top: 2.5rem;
     }
@@ -897,19 +909,19 @@ body {
     .smartphone-mockup {
         width: 250px;
         border-width: 6px;
-        border-radius: 30px;
+        border-radius: 28px;
     }
 
     .impact-title {
-        font-size: 1.85rem;
+        font-size: 1.8rem;
     }
 
     .impact-desc {
-        font-size: 1rem;
+        font-size: 0.98rem;
     }
 
     .features-section {
-        padding: 4rem 0 2rem;
+        padding: 3.5rem 0 2rem;
     }
 
     .features-header {
@@ -917,27 +929,28 @@ body {
     }
 
     .features-header h2 {
-        font-size: 1.85rem;
+        font-size: 1.8rem;
     }
 }
 
 /* Telas muito pequenas (< 380px) */
 @media (max-width: 380px) {
     .navbar {
-        padding: 0.65rem 3%;
+        padding: 0.5rem 3%;
+        gap: 5px;
     }
 
     .logo-text {
-        font-size: 1.1rem;
+        font-size: 1.05rem;
     }
 
     .btn-bilheteria {
-        font-size: 0.76rem;
-        padding: 0.55rem 0.4rem;
+        font-size: 0.7rem;
+        padding: 0.32rem 0.45rem;
     }
 
     .btn-consultor {
-        font-size: 0.76rem;
-        padding: 0.55rem 0.4rem;
+        font-size: 0.7rem;
+        padding: 0.32rem 0.45rem;
     }
 }
