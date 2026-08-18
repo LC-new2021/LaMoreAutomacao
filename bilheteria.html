@@ -3,13 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Bilheteria - La More Eventos</title>
+    <title>La More Bilheteria - Inscrições de Corridas de Rua e Venda de Ingressos</title>
     <link rel="icon" type="image/png" href="favicon.png">
+    <meta name="description" content="Plataforma de bilheteria e inscrições esportivas líder em tecnologia. Especialista em corridas de rua, gestão de kits, assessorias e exportação para cronometragem. Menores taxas e PIX instantâneo.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css?v=20">
+    <link rel="stylesheet" href="style.css?v=25">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
+    <!-- Background Animation -->
     <div class="blob-cont">
         <div class="blob blob1"></div>
         <div class="blob blob2"></div>
@@ -32,22 +36,276 @@
                 <i class="fa-solid fa-arrow-left"></i>
                 <span>Voltar ao Início</span>
             </a>
-            <a href="https://wa.me/55?text=Ol%C3%A1%2C%20gostaria%20de%20saber%20mais%20sobre%20a%20Bilheteria%20da%20La%20More%20Eventos!" target="_blank" class="btn-consultor" id="chatbotBtn">
+            <a href="https://wa.me/55?text=Ol%C3%A1%2C%20gostaria%20de%20publicar%20minha%20corrida%20ou%20evento%20na%20La%20More%20Bilheteria!" target="_blank" class="btn-consultor" id="chatbotBtn">
                 <i class="fa-brands fa-whatsapp"></i>
                 <span>Falar com Consultor</span>
             </a>
         </div>
     </nav>
 
-    <main class="container" style="display: flex; align-items: center; justify-content: center; min-height: 80vh; text-align: center;">
-        <div class="glass-card fadeIn glow-border" style="max-width: 600px; width: 100%;">
-            <i class="fa-solid fa-ticket" style="font-size: 3.5rem; color: var(--primary); margin-bottom: 1.5rem;"></i>
-            <h1 style="font-size: clamp(2rem, 5vw, 2.5rem); margin-bottom: 1rem; color: #fff;">Sistema de Bilheteria</h1>
-            <p style="color: var(--text-muted); font-size: 1.1rem; line-height: 1.6; margin-bottom: 2rem;">
-                Estamos preparando novidades exclusivas para o nosso poderoso sistema de Bilheteria Integrada. Em breve, você poderá conferir todas as funcionalidades e integrações aqui.
+    <main class="container">
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-content fadeIn">
+                <span class="badge" style="background: rgba(59, 130, 246, 0.2); color: #93c5fd; border-color: rgba(59, 130, 246, 0.4);">
+                    <i class="fa-solid fa-person-running"></i> A Nova Era das Inscrições &amp; Ingressos
+                </span>
+                <h1>Plataforma de <span>Bilheteria &amp; Corridas de Rua</span></h1>
+                <p>
+                    Venda de ingressos e inscrições esportivas sem burocracia. Controle completo de tamanhos de camiseta, percursos (5k, 10k, 21k, 42k), painel de assessorias, check-in de kits via QR Code e exportação nativa para chip de cronometragem. As menores taxas do mercado com repasse ágil para o organizador.
+                </p>
+                
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <i class="fa-solid fa-person-running" style="color: #60a5fa;"></i>
+                        <span>Corridas de Rua &amp; Esportes</span>
+                    </div>
+                    <div class="stat-item">
+                        <i class="fa-solid fa-shirt" style="color: #ec4899;"></i>
+                        <span>Gestão de Kits &amp; Camisetas</span>
+                    </div>
+                    <div class="stat-item">
+                        <i class="fa-solid fa-stopwatch" style="color: #34d399;"></i>
+                        <span>Chip Timing Export</span>
+                    </div>
+                    <div class="stat-item">
+                        <i class="fa-solid fa-bolt" style="color: #fbbf24;"></i>
+                        <span>PIX &amp; Cartão em até 12x</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Form Section (Lead Capture p/ Organizadores) -->
+            <div class="hero-form slideInRight">
+                <div class="glass-card form-container glow-border">
+                    <div class="form-header">
+                        <h3>Publique seu Evento</h3>
+                        <p>Preencha para receber uma proposta com taxas personalizadas e demonstração do painel.</p>
+                    </div>
+
+                    <form id="leadForm" action="https://formsubmit.co/leocavalcanti.ss@gmail.com" method="POST">
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="hidden" name="_subject" value="Novo Interesse em Bilheteria/Corrida - La More Eventos">
+                        <input type="hidden" name="_template" value="table">
+                        
+                        <div class="input-group">
+                            <i class="fa-regular fa-user"></i>
+                            <input type="text" name="nome" placeholder="Seu nome ou da Assessoria/Produtora" required />
+                        </div>
+                        
+                        <div class="input-group">
+                            <i class="fa-regular fa-envelope"></i>
+                            <input type="email" name="email" placeholder="Seu e-mail corporativo" required />
+                        </div>
+
+                        <div class="input-group">
+                            <i class="fa-brands fa-whatsapp"></i>
+                            <input type="text" name="whatsapp" placeholder="WhatsApp para contato (com DDD)" required />
+                        </div>
+                        
+                        <div class="input-group">
+                            <i class="fa-solid fa-trophy"></i>
+                            <input type="text" name="tipo_evento" placeholder="Ex: Corrida 5k/10k, Show, Festival, Festa..." required />
+                        </div>
+
+                        <div class="input-group">
+                            <i class="fa-solid fa-users"></i>
+                            <input type="text" name="estimativa_publico" placeholder="Estimativa de Atletas/Público (Ex: 1.500)" required />
+                        </div>
+
+                        <button type="submit" class="btn btn-gradient w-100" id="submitBtn">
+                            Quero Publicar meu Evento <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+                    </form>
+                    
+                    <div id="successMessage" class="success-message hidden">
+                        <i class="fa-solid fa-circle-check"></i>
+                        <p>Solicitação enviada com sucesso! Entraremos em contato em instantes.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SEÇÃO: PILARES EXCLUSIVOS DE CORRIDAS DE RUA -->
+        <section class="impact-section" style="margin-top: 4.5rem;">
+            <div class="impact-bg-glow"></div>
+            
+            <div style="text-align: center; max-width: 800px; margin: 0 auto 3.5rem; padding: 0 1.5rem;">
+                <span class="badge badge-blue"><i class="fa-solid fa-medal"></i> Foco Total no Esporte</span>
+                <h2 style="font-size: clamp(2rem, 4vw, 3rem); color: #fff; margin-bottom: 1rem;">Desenvolvido Sob Medida para Organizadores de Corridas</h2>
+                <p style="color: var(--text-muted); font-size: 1.15rem; line-height: 1.6;">
+                    Acabe com as planilhas manuais e problemas com tamanhos de camisetas esgotados. A La More Bilheteria entrega um fluxo impecável do cadastro à linha de chegada.
+                </p>
+            </div>
+
+            <div class="features-grid" style="padding: 0 2rem;">
+                
+                <!-- Card 1 -->
+                <div class="glass-card feature-card">
+                    <div class="feature-icon icon-blue">
+                        <i class="fa-solid fa-shirt"></i>
+                    </div>
+                    <h3>Grade de Kits &amp; Camisetas</h3>
+                    <p>Controle automático de estoque por tamanho de camiseta (Babylook P/M/G e Tradicional P/M/G/GG/XG). Quando um tamanho esgota, o sistema bloqueia instantaneamente.</p>
+                    <ul class="feature-list">
+                        <li><i class="fa-solid fa-check"></i> Kits Básico, Premium e VIP</li>
+                        <li><i class="fa-solid fa-check"></i> Controle de estoque em tempo real</li>
+                        <li><i class="fa-solid fa-check"></i> Relatório consolidado para confecção</li>
+                    </ul>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="glass-card feature-card highlight-card">
+                    <div class="feature-icon icon-pink">
+                        <i class="fa-solid fa-users-rectangle"></i>
+                    </div>
+                    <h3>Painel de Assessorias &amp; Grupos</h3>
+                    <p>Facilite a vida dos treinadores e assessorias esportivas. Inscrições em massa de atletas em poucos cliques, com faturamento único ou cupons de desconto exclusivos.</p>
+                    <ul class="feature-list">
+                        <li><i class="fa-solid fa-check"></i> Cadastro em lote de equipes</li>
+                        <li><i class="fa-solid fa-check"></i> Desconto progressivo por quantidade</li>
+                        <li><i class="fa-solid fa-check"></i> Pagamento unificado via PIX/Boleto</li>
+                    </ul>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="glass-card feature-card">
+                    <div class="feature-icon icon-blue" style="background: rgba(16,185,129,0.15); color: #34d399; border-color: rgba(16,185,129,0.3);">
+                        <i class="fa-solid fa-stopwatch"></i>
+                    </div>
+                    <h3>Exportação para Cronometragem</h3>
+                    <p>Integração pronta com as empresas de chip de cronometragem de Brasília e do Brasil. Exporte os dados em formato padrão (CSV/TXT) com número de peito e categorias em 1 segundo.</p>
+                    <ul class="feature-list">
+                        <li><i class="fa-solid fa-check"></i> Padrão Chip Timing oficial</li>
+                        <li><i class="fa-solid fa-check"></i> Divisão automática por faixas etárias</li>
+                        <li><i class="fa-solid fa-check"></i> Categoria PCD &amp; Desconto 60+ (Idoso)</li>
+                    </ul>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="glass-card feature-card">
+                    <div class="feature-icon icon-blue">
+                        <i class="fa-solid fa-qrcode"></i>
+                    </div>
+                    <h3>Retirada de Kits em 5 Segundos</h3>
+                    <p>A entrega de kits não precisa ter filas quilométricas. Seu staff escaneia o QR Code do atleta direto pelo celular e confirma a entrega na hora, com termo assinado digitalmente.</p>
+                    <ul class="feature-list">
+                        <li><i class="fa-solid fa-check"></i> Validador de kit via câmera do smartphone</li>
+                        <li><i class="fa-solid fa-check"></i> Termo de responsabilidade digital</li>
+                        <li><i class="fa-solid fa-check"></i> Histórico de quem retirou e horário</li>
+                    </ul>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="glass-card feature-card">
+                    <div class="feature-icon icon-pink">
+                        <i class="fa-solid fa-ticket"></i>
+                    </div>
+                    <h3>Shows, Festas &amp; Eventos Tradicionais</h3>
+                    <p>Além de corridas, o sistema gerencia com perfeição eventos sociais e corporativos. Setores (Pista, VIP, Camarote, Open Bar), lotes automáticos e lista de promoters.</p>
+                    <ul class="feature-list">
+                        <li><i class="fa-solid fa-check"></i> Lotes automáticos por data ou estoque</li>
+                        <li><i class="fa-solid fa-check"></i> Ingressos nominais com QR Code anti-fraude</li>
+                        <li><i class="fa-solid fa-check"></i> Links de promoters com comissão</li>
+                    </ul>
+                </div>
+
+                <!-- Card 6 -->
+                <div class="glass-card feature-card highlight-card" style="border-color: rgba(59,130,246,0.35);">
+                    <div class="feature-icon icon-blue">
+                        <i class="fa-solid fa-cash-register"></i>
+                    </div>
+                    <h3>Integração Opcional com Bar Cashless</h3>
+                    <p>Diferencial único no mercado: se o seu evento ou pós-prova possuir praça de alimentação, bares ou venda de bebidas, integre opcionalmente com o Cartão de Consumo La More.</p>
+                    <ul class="feature-list">
+                        <li><i class="fa-solid fa-check"></i> Ingressos convertidos em saldo de bar</li>
+                        <li><i class="fa-solid fa-check"></i> Recargas antecipadas na compra do ingresso</li>
+                        <li><i class="fa-solid fa-check"></i> Operação 100% sem dinheiro físico</li>
+                    </ul>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- SEÇÃO: COMPARATIVO VS CONCORRENTES -->
+        <section class="features-section" style="padding: 5rem 0 3rem;">
+            <div class="features-header">
+                <span class="badge badge-pink">Vantagem Competitiva Real</span>
+                <h2>Por Que Mudar para a La More Bilheteria?</h2>
+                <p>Compare e veja porque grandes organizadores e assessorias estão migrando para a nossa tecnologia.</p>
+            </div>
+
+            <div style="overflow-x: auto; padding: 0 1rem;">
+                <table style="width: 100%; border-collapse: collapse; text-align: left; background: var(--glass-bg); border-radius: 20px; overflow: hidden; border: 1px solid var(--glass-border); min-width: 600px;">
+                    <thead>
+                        <tr style="background: rgba(30,58,138,0.4); border-bottom: 1px solid var(--glass-border);">
+                            <th style="padding: 1.25rem 1.5rem; color: #fff; font-size: 1.05rem;">Recurso / Benefício</th>
+                            <th style="padding: 1.25rem 1.5rem; color: #94a3b8; font-size: 1.05rem;">Portais Tradicionais (Sympla/Ticket Sports)</th>
+                            <th style="padding: 1.25rem 1.5rem; color: #60a5fa; font-size: 1.1rem; font-weight: 800;"><i class="fa-solid fa-star" style="color: #fbbf24;"></i> La More Bilheteria</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr style="border-bottom: 1px solid rgba(255,255,255,0.05);">
+                            <td style="padding: 1.1rem 1.5rem; font-weight: 600; color: #f1f5f9;">Taxas de Conveniência</td>
+                            <td style="padding: 1.1rem 1.5rem; color: #ef4444;">8% a 12% + Taxa Fixa por atleta</td>
+                            <td style="padding: 1.1rem 1.5rem; color: #34d399; font-weight: 700;">As menores taxas do mercado</td>
+                        </tr>
+                        <tr style="border-bottom: 1px solid rgba(255,255,255,0.05); background: rgba(255,255,255,0.02);">
+                            <td style="padding: 1.1rem 1.5rem; font-weight: 600; color: #f1f5f9;">Tempo de Inscrição / Checkout</td>
+                            <td style="padding: 1.1rem 1.5rem; color: #94a3b8;">Longo e burocrático (2 a 4 minutos)</td>
+                            <td style="padding: 1.1rem 1.5rem; color: #34d399; font-weight: 700;">Ultra-rápido (menos de 40 segundos)</td>
+                        </tr>
+                        <tr style="border-bottom: 1px solid rgba(255,255,255,0.05);">
+                            <td style="padding: 1.1rem 1.5rem; font-weight: 600; color: #f1f5f9;">Módulo de Assessorias Esportivas</td>
+                            <td style="padding: 1.1rem 1.5rem; color: #94a3b8;">Confuso e manual por cupons</td>
+                            <td style="padding: 1.1rem 1.5rem; color: #34d399; font-weight: 700;">Painel dedicado para treinadores</td>
+                        </tr>
+                        <tr style="border-bottom: 1px solid rgba(255,255,255,0.05); background: rgba(255,255,255,0.02);">
+                            <td style="padding: 1.1rem 1.5rem; font-weight: 600; color: #f1f5f9;">Entrega de Kits Pré-Prova</td>
+                            <td style="padding: 1.1rem 1.5rem; color: #94a3b8;">Planilhas impressas e lentidão</td>
+                            <td style="padding: 1.1rem 1.5rem; color: #34d399; font-weight: 700;">App com Leitura de QR Code instantânea</td>
+                        </tr>
+                        <tr style="border-bottom: 1px solid rgba(255,255,255,0.05);">
+                            <td style="padding: 1.1rem 1.5rem; font-weight: 600; color: #f1f5f9;">Exportação p/ Cronometragem</td>
+                            <td style="padding: 1.1rem 1.5rem; color: #94a3b8;">Planilhas desformatadas</td>
+                            <td style="padding: 1.1rem 1.5rem; color: #34d399; font-weight: 700;">100% Compatível com Chip Timing</td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 1.1rem 1.5rem; font-weight: 600; color: #f1f5f9;">Integração com Bar / Cashless</td>
+                            <td style="padding: 1.1rem 1.5rem; color: #ef4444;">Não possui</td>
+                            <td style="padding: 1.1rem 1.5rem; color: #34d399; font-weight: 700;">Nativo com La More Eventos</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- CTA FINAL -->
+        <section style="margin: 4rem 0 2rem; text-align: center; background: linear-gradient(135deg, rgba(30,58,138,0.3), rgba(236,72,153,0.3)); border: 1px solid rgba(255,255,255,0.1); border-radius: 28px; padding: 4rem 2rem;">
+            <h2 style="font-size: clamp(2rem, 4vw, 2.8rem); color: #fff; margin-bottom: 1rem;">Pronto para Elevar o Nível do Seu Evento?</h2>
+            <p style="color: var(--text-muted); font-size: 1.15rem; max-width: 650px; margin: 0 auto 2.5rem; line-height: 1.6;">
+                Junte-se aos produtores e diretores de prova que escolheram modernidade, menores taxas e total controle em tempo real.
             </p>
-            <a href="index.html" class="btn btn-gradient btn-cta">Voltar para a Página Principal</a>
-        </div>
+            <a href="https://wa.me/55?text=Ol%C3%A1%2C%20quero%20conhecer%20a%20La%20More%20Bilheteria%20e%20fazer%20uma%20simula%C3%A7%C3%A3o!" target="_blank" class="btn btn-gradient btn-cta" style="font-size: 1.1rem; padding: 1rem 2.5rem; margin: 0 auto; display: inline-flex;">
+                <i class="fa-brands fa-whatsapp"></i> Falar com um Especialista no WhatsApp
+            </a>
+        </section>
+
     </main>
+
+    <!-- Footer - LGPD / Exclusividade -->
+    <footer class="footer-section">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="logo-final.png?v=11" alt="La More Eventos Logo" class="footer-logo-img">
+                <span class="footer-logo-text">La More <span class="logo-gradient">Eventos</span></span>
+            </div>
+            <p><strong>Direito de Uso e Exclusividade:</strong> O conteúdo, design e as soluções disponibilizadas neste site possuem proteção autoral e direitos de uso exclusivos da La More Eventos. É vedada a reprodução e uso não-autorizado.</p>
+            <p><strong>Aviso de Proteção de Dados (LGPD):</strong> Valorizamos e respeitamos seus dados. De acordo com a Lei Geral de Proteção de Dados (Lei nº 13.709/18), asseguramos que os dados cadastrados neste site serão usados unicamente para nosso contato com você para apresentar nossos serviços.</p>
+            <p class="copyright">&copy; 2026 La More Eventos. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
