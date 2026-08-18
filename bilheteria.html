@@ -2,11 +2,11 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Bilheteria - La More Eventos</title>
     <link rel="icon" type="image/png" href="favicon.png">
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css?v=2">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
@@ -16,26 +16,36 @@
         <div class="blob blob3"></div>
     </div>
 
+    <!-- Header / Navbar -->
     <nav class="navbar">
         <div class="logo">
-            <a href="index.html" style="display: flex; align-items: center; text-decoration: none;">
-                <img src="logo-final.png?v=11" alt="La More Eventos Logo" style="height: 55px; width: auto; transition: transform 0.3s ease;">
-                <span style="font-size: 1.65rem; font-weight: 800; color: #fff; margin-left: 12px; letter-spacing: -0.5px; display: inline-block;">La More <span style="background: linear-gradient(135deg, var(--primary), var(--secondary)); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Eventos</span></span>
+            <a href="index.html" class="logo-link">
+                <img src="logo-final.png?v=11" alt="La More Eventos Logo" class="logo-img">
+                <span class="logo-text">La More <span class="logo-gradient">Eventos</span></span>
             </a>
         </div>
-        <div class="nav-links">
-            <a href="index.html" class="nav-link" style="color: #fff; font-weight: 600; text-transform: uppercase; font-size: 0.9rem; letter-spacing: 1px;"><i class="fa-solid fa-arrow-left"></i> Voltar ao Início</a>
+        <div class="nav-right">
+            <a href="index.html" class="btn-bilheteria">
+                <i class="fa-solid fa-arrow-left"></i>
+                <span class="btn-label-desktop">Voltar ao Início</span>
+                <span class="btn-label-mobile">Início</span>
+            </a>
+            <a href="https://wa.me/55?text=Ol%C3%A1%2C%20gostaria%20de%20saber%20mais%20sobre%20a%20Bilheteria%20da%20La%20More%20Eventos!" target="_blank" class="btn-consultor" id="chatbotBtn">
+                <i class="fa-brands fa-whatsapp"></i>
+                <span class="btn-label-desktop">Falar com Consultor</span>
+                <span class="btn-label-mobile">Consultor</span>
+            </a>
         </div>
     </nav>
 
     <main class="container" style="display: flex; align-items: center; justify-content: center; min-height: 80vh; text-align: center;">
-        <div class="glass-card fadeIn glow-border" style="max-width: 600px;">
-            <i class="fa-solid fa-ticket" style="font-size: 4rem; color: var(--primary); margin-bottom: 2rem;"></i>
-            <h1 style="font-size: 2.5rem; margin-bottom: 1rem; color: #fff;">Sistema de Bilheteria</h1>
-            <p style="color: var(--text-muted); font-size: 1.2rem; line-height: 1.6; margin-bottom: 2rem;">
-                Estamos preparando uma página exclusiva para detalhar o nosso poderoso sistema de Bilheteria Integrada. Em breve, você poderá conferir todas as funcionalidades e integrações aqui.
+        <div class="glass-card fadeIn glow-border" style="max-width: 600px; width: 100%;">
+            <i class="fa-solid fa-ticket" style="font-size: 3.5rem; color: var(--primary); margin-bottom: 1.5rem;"></i>
+            <h1 style="font-size: clamp(2rem, 5vw, 2.5rem); margin-bottom: 1rem; color: #fff;">Sistema de Bilheteria</h1>
+            <p style="color: var(--text-muted); font-size: 1.1rem; line-height: 1.6; margin-bottom: 2rem;">
+                Estamos preparando novidades exclusivas para o nosso poderoso sistema de Bilheteria Integrada. Em breve, você poderá conferir todas as funcionalidades e integrações aqui.
             </p>
-            <a href="index.html" class="btn btn-gradient">Voltar para a Página Principal</a>
+            <a href="index.html" class="btn btn-gradient btn-cta">Voltar para a Página Principal</a>
         </div>
     </main>
 </body>

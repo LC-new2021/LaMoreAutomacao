@@ -2,14 +2,14 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>La More Eventos - Bilheteria e Cartão de Consumo Digital</title>
     <link rel="icon" type="image/png" href="favicon.png">
     <meta name="description" content="A evolução da gestão de eventos. Bilheteria digital e cartão de consumo inteligente por QR Code direto no celular. Sem filas, sem cartões físicos.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css?v=2">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
@@ -23,17 +23,21 @@
     <!-- Header / Navbar -->
     <nav class="navbar">
         <div class="logo">
-            <a href="index.html" style="display: flex; align-items: center; gap: 12px; text-decoration: none;">
-                <img src="logo-final.png?v=11" alt="La More Eventos Logo" style="height: 60px; width: auto; transition: transform 0.3s ease;">
-                <span style="font-size: 1.5rem; font-weight: 800; color: #fff; letter-spacing: -0.5px;">La More <span style="background: linear-gradient(135deg, #3b82f6, #ec4899); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Eventos</span></span>
+            <a href="index.html" class="logo-link">
+                <img src="logo-final.png?v=11" alt="La More Eventos Logo" class="logo-img">
+                <span class="logo-text">La More <span class="logo-gradient">Eventos</span></span>
             </a>
         </div>
-        <div class="nav-links">
-            <a href="bilheteria.html" class="nav-link" style="color: #fff; font-weight: 600; text-transform: uppercase; font-size: 0.9rem; letter-spacing: 1px;"><i class="fa-solid fa-ticket"></i> Módulo Bilheteria</a>
-        </div>
-        <div class="nav-actions">
-            <a href="https://wa.me/55?text=Ol%C3%A1%2C%20gostaria%20de%20saber%20mais%20sobre%20o%20sistema%20da%20La%20More%20Eventos!" target="_blank" class="btn btn-primary" id="chatbotBtn">
-                <i class="fa-brands fa-whatsapp"></i> Falar com um Consultor
+        <div class="nav-right">
+            <a href="bilheteria.html" class="btn-bilheteria">
+                <i class="fa-solid fa-ticket"></i>
+                <span class="btn-label-desktop">Módulo Bilheteria</span>
+                <span class="btn-label-mobile">Bilheteria</span>
+            </a>
+            <a href="https://wa.me/55?text=Ol%C3%A1%2C%20gostaria%20de%20saber%20mais%20sobre%20o%20sistema%20da%20La%20More%20Eventos!" target="_blank" class="btn-consultor" id="chatbotBtn">
+                <i class="fa-brands fa-whatsapp"></i>
+                <span class="btn-label-desktop">Falar com Consultor</span>
+                <span class="btn-label-mobile">Consultor</span>
             </a>
         </div>
     </nav>
@@ -111,57 +115,57 @@
         </section>
 
         <!-- SEÇÃO 1: CARTÃO DE CONSUMO DIGITAL (VISÃO DO CLIENTE) -->
-        <section class="impact-section" style="padding: 6rem 0; background: linear-gradient(135deg, rgba(17,24,39,0.85), rgba(11,15,25,0.95)); border-top: 1px solid rgba(255,255,255,0.05); border-bottom: 1px solid rgba(255,255,255,0.05); position: relative; overflow: hidden; margin-top: 4rem; border-radius: 24px;">
-            <div style="position: absolute; top: 0; right: 0; width: 100%; height: 100%; background: radial-gradient(circle at 80% 30%, rgba(59,130,246,0.1), transparent 50%); pointer-events: none;"></div>
+        <section class="impact-section">
+            <div class="impact-bg-glow"></div>
             
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 4rem; align-items: center; padding: 0 2rem;">
+            <div class="impact-grid">
                 
                 <!-- Mockup Cartão do Cliente -->
-                <div class="impact-image fadeIn" style="display: flex; justify-content: center; position: relative;">
+                <div class="impact-image fadeIn">
                     <div class="smartphone-mockup">
                         <div class="smartphone-notch"></div>
                         <img src="cartao-cliente.jpg" alt="Cartão de Consumo Digital La More Eventos" class="app-screen">
                     </div>
-                    <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 260px; height: 480px; background: var(--primary); filter: blur(90px); opacity: 0.25; z-index: -1;"></div>
+                    <div class="mockup-glow primary-glow"></div>
                 </div>
 
                 <!-- Texto Explicativo Cartão do Cliente -->
                 <div class="impact-text slideInRight">
-                    <span class="badge" style="color: #60a5fa; background: rgba(59,130,246,0.15); border-color: rgba(59,130,246,0.3);">Experiência do Participante</span>
-                    <h2 style="font-size: clamp(2rem, 4vw, 3.2rem); line-height: 1.1; margin-bottom: 1.5rem; color: #fff;">
-                        Cartão de Consumo <span style="background: linear-gradient(135deg, var(--primary), #60a5fa); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Digital</span>
+                    <span class="badge badge-blue">Experiência do Participante</span>
+                    <h2 class="impact-title">
+                        Cartão de Consumo <span class="gradient-blue">Digital</span>
                     </h2>
-                    <p style="color: var(--text-muted); font-size: 1.15rem; line-height: 1.7; margin-bottom: 2rem;">
+                    <p class="impact-desc">
                         O seu público não precisa de cartões plásticos nem pulseiras recarregáveis. A experiência é 100% prática e direta no smartphone:
                     </p>
 
-                    <div style="display: flex; flex-direction: column; gap: 1.25rem; margin-bottom: 2.5rem;">
-                        <div style="display: flex; gap: 1rem; align-items: flex-start;">
-                            <div style="background: rgba(59,130,246,0.2); color: #60a5fa; width: 36px; height: 36px; border-radius: 10px; display: flex; align-items: center; justify-content: center; font-weight: 700; flex-shrink: 0;">1</div>
+                    <div class="steps-list">
+                        <div class="step-item">
+                            <div class="step-num">1</div>
                             <div>
-                                <h4 style="color: #fff; font-size: 1.1rem; margin-bottom: 0.25rem;">Acesso via QR Code ou Link</h4>
-                                <p style="color: var(--text-muted); font-size: 0.95rem;">O cliente lê o QR Code no evento ou acessa pelo link oficial da festa.</p>
+                                <h4>Acesso via QR Code ou Link</h4>
+                                <p>O cliente lê o QR Code no evento ou acessa pelo link oficial da festa.</p>
                             </div>
                         </div>
 
-                        <div style="display: flex; gap: 1rem; align-items: flex-start;">
-                            <div style="background: rgba(59,130,246,0.2); color: #60a5fa; width: 36px; height: 36px; border-radius: 10px; display: flex; align-items: center; justify-content: center; font-weight: 700; flex-shrink: 0;">2</div>
+                        <div class="step-item">
+                            <div class="step-num">2</div>
                             <div>
-                                <h4 style="color: #fff; font-size: 1.1rem; margin-bottom: 0.25rem;">Cadastro Rápido (Nome, Telefone e CPF)</h4>
-                                <p style="color: var(--text-muted); font-size: 0.95rem;">Preenchimento ultra-rápido em menos de 15 segundos para gerar o cartão.</p>
+                                <h4>Cadastro Rápido (Nome, Telefone e CPF)</h4>
+                                <p>Preenchimento ultra-rápido em menos de 15 segundos para gerar o cartão.</p>
                             </div>
                         </div>
 
-                        <div style="display: flex; gap: 1rem; align-items: flex-start;">
-                            <div style="background: rgba(59,130,246,0.2); color: #60a5fa; width: 36px; height: 36px; border-radius: 10px; display: flex; align-items: center; justify-content: center; font-weight: 700; flex-shrink: 0;">3</div>
+                        <div class="step-item">
+                            <div class="step-num">3</div>
                             <div>
-                                <h4 style="color: #fff; font-size: 1.1rem; margin-bottom: 0.25rem;">Cartão Ativo com Saldo &amp; Cardápio</h4>
-                                <p style="color: var(--text-muted); font-size: 0.95rem;">Exibe saldo em tempo real, QR Code para débito no bar, extrato e cardápio digital.</p>
+                                <h4>Cartão Ativo com Saldo &amp; Cardápio</h4>
+                                <p>Exibe saldo em tempo real, QR Code para débito no bar, extrato e cardápio digital.</p>
                             </div>
                         </div>
                     </div>
 
-                    <a href="https://wa.me/55?text=Quero%20conhecer%20o%20Cart%C3%A3o%20de%20Consumo%20Digital!" target="_blank" class="btn btn-gradient">
+                    <a href="https://wa.me/55?text=Quero%20conhecer%20o%20Cart%C3%A3o%20de%20Consumo%20Digital!" target="_blank" class="btn btn-gradient btn-cta">
                         <i class="fa-brands fa-whatsapp"></i> Solicitar Demonstração
                     </a>
                 </div>
@@ -170,65 +174,65 @@
         </section>
 
         <!-- SEÇÃO 2: VALIDAÇÃO DO OPERADOR (VISÃO DA EQUIPE DO BAR) -->
-        <section class="impact-section" style="padding: 6rem 0; background: linear-gradient(135deg, rgba(11,15,25,0.95), rgba(17,24,39,0.85)); border-top: 1px solid rgba(255,255,255,0.05); border-bottom: 1px solid rgba(255,255,255,0.05); position: relative; overflow: hidden; margin-top: 3rem; border-radius: 24px;">
-            <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: radial-gradient(circle at 20% 70%, rgba(236,72,153,0.08), transparent 50%); pointer-events: none;"></div>
+        <section class="impact-section impact-reverse">
+            <div class="impact-bg-glow-pink"></div>
             
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 4rem; align-items: center; padding: 0 2rem;">
+            <div class="impact-grid">
                 
                 <!-- Texto Operador de Bar -->
                 <div class="impact-text slideInRight">
-                    <span class="badge" style="color: var(--secondary); background: rgba(236,72,153,0.15); border-color: rgba(236,72,153,0.3);">Agilidade no Atendimento</span>
-                    <h2 style="font-size: clamp(2rem, 4vw, 3.2rem); line-height: 1.1; margin-bottom: 1.5rem; color: #fff;">
-                        Validação Instantânea no <span style="background: linear-gradient(135deg, var(--secondary), #f472b6); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Bar</span>
+                    <span class="badge badge-pink">Agilidade no Atendimento</span>
+                    <h2 class="impact-title">
+                        Validação Instantânea no <span class="gradient-pink">Bar</span>
                     </h2>
-                    <p style="color: var(--text-muted); font-size: 1.15rem; line-height: 1.7; margin-bottom: 2rem;">
+                    <p class="impact-desc">
                         Com o <strong>App do Operador de Bar</strong>, o garçom ou bartender utiliza a própria câmera do celular para escaneamento instantâneo do QR Code do cliente:
                     </p>
 
-                    <div style="display: flex; flex-direction: column; gap: 1.25rem; margin-bottom: 2.5rem;">
-                        <div style="display: flex; gap: 1rem; align-items: flex-start;">
-                            <div style="background: rgba(236,72,153,0.2); color: #f472b6; width: 36px; height: 36px; border-radius: 10px; display: flex; align-items: center; justify-content: center; font-weight: 700; flex-shrink: 0;"><i class="fa-solid fa-camera"></i></div>
+                    <div class="steps-list">
+                        <div class="step-item">
+                            <div class="step-num step-pink"><i class="fa-solid fa-camera"></i></div>
                             <div>
-                                <h4 style="color: #fff; font-size: 1.1rem; margin-bottom: 0.25rem;">Leitura por Câmera em Segundos</h4>
-                                <p style="color: var(--text-muted); font-size: 0.95rem;">Basta apontar a câmera para o QR Code do cartão digital do participante.</p>
+                                <h4>Leitura por Câmera em Segundos</h4>
+                                <p>Basta apontar a câmera para o QR Code do cartão digital do participante.</p>
                             </div>
                         </div>
 
-                        <div style="display: flex; gap: 1rem; align-items: flex-start;">
-                            <div style="background: rgba(236,72,153,0.2); color: #f472b6; width: 36px; height: 36px; border-radius: 10px; display: flex; align-items: center; justify-content: center; font-weight: 700; flex-shrink: 0;"><i class="fa-solid fa-bolt"></i></div>
+                        <div class="step-item">
+                            <div class="step-num step-pink"><i class="fa-solid fa-bolt"></i></div>
                             <div>
-                                <h4 style="color: #fff; font-size: 1.1rem; margin-bottom: 0.25rem;">Débito Imediato &amp; Sem Fichas</h4>
-                                <p style="color: var(--text-muted); font-size: 0.95rem;">O pedido é entregue na hora e o saldo atualizado sem troco ou fichas físicas.</p>
+                                <h4>Débito Imediato &amp; Sem Fichas</h4>
+                                <p>O pedido é entregue na hora e o saldo atualizado sem troco ou fichas físicas.</p>
                             </div>
                         </div>
                     </div>
 
-                    <a href="https://wa.me/55?text=Quero%20saber%20como%20funciona%20o%20App%20do%20Operador!" target="_blank" class="btn btn-gradient">
+                    <a href="https://wa.me/55?text=Quero%20saber%20como%20funciona%20o%20App%20do%20Operador!" target="_blank" class="btn btn-gradient btn-cta">
                         <i class="fa-brands fa-whatsapp"></i> Falar com um Consultor
                     </a>
                 </div>
 
                 <!-- Mockup App Operador -->
-                <div class="impact-image fadeIn" style="display: flex; justify-content: center; position: relative;">
+                <div class="impact-image fadeIn">
                     <div class="smartphone-mockup">
                         <div class="smartphone-notch"></div>
                         <img src="app-operador.jpg" alt="App do Operador de Bar - Leitor de QR Code" class="app-screen">
                     </div>
-                    <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 260px; height: 480px; background: var(--secondary); filter: blur(90px); opacity: 0.25; z-index: -1;"></div>
+                    <div class="mockup-glow secondary-glow"></div>
                 </div>
 
             </div>
         </section>
 
         <!-- Seção de Recursos Principais (100% Digital) -->
-        <section class="features-section" style="padding: 6rem 0 4rem;">
-            <div style="text-align: center; margin-bottom: 4rem;">
-                <span class="badge" style="background: rgba(59, 130, 246, 0.15); color: #60a5fa; border-color: rgba(59, 130, 246, 0.3);">Tecnologia de Ponta</span>
-                <h2 style="font-size: 2.8rem; margin-bottom: 1rem; color: #fff;">O Que Movimenta o Seu Evento</h2>
-                <p style="color: var(--text-muted); font-size: 1.2rem; max-width: 600px; margin: 0 auto;">Duas soluções poderosas conectadas em uma única plataforma.</p>
+        <section class="features-section">
+            <div class="features-header">
+                <span class="badge badge-blue">Tecnologia de Ponta</span>
+                <h2>O Que Movimenta o Seu Evento</h2>
+                <p>Duas soluções poderosas conectadas em uma única plataforma.</p>
             </div>
             
-            <div class="features-grid" style="grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));">
+            <div class="features-grid">
                 <!-- Bilheteria -->
                 <div class="glass-card feature-card">
                     <div class="feature-icon icon-blue">
@@ -264,12 +268,12 @@
     <!-- Footer - LGPD / Exclusividade -->
     <footer class="footer-section">
         <div class="footer-content">
-            <div class="footer-logo" style="margin-bottom: 2rem; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 0.75rem;">
-                <img src="logo-final.png?v=11" alt="La More Eventos Logo" style="height: 120px; width: auto; margin: 0 auto;">
-                <span style="font-size: 1.8rem; font-weight: 800; color: #fff; letter-spacing: -0.5px;">La More <span style="background: linear-gradient(135deg, #3b82f6, #ec4899); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Eventos</span></span>
+            <div class="footer-logo">
+                <img src="logo-final.png?v=11" alt="La More Eventos Logo" class="footer-logo-img">
+                <span class="footer-logo-text">La More <span class="logo-gradient">Eventos</span></span>
             </div>
-            <p style="margin-bottom: 1.5rem;"><strong>Direito de Uso e Exclusividade:</strong> O conteúdo, design e as soluções disponibilizadas neste site possuem proteção autoral e direitos de uso exclusivos da La More Eventos. É vedada a reprodução e uso não-autorizado.</p>
-            <p style="margin-bottom: 1.5rem;"><strong>Aviso de Proteção de Dados (LGPD):</strong> Valorizamos e respeitamos seus dados. De acordo com a Lei Geral de Proteção de Dados (Lei nº 13.709/18), asseguramos que os dados cadastrados neste site serão usados unicamente para nosso contato com você para apresentar nossos serviços.</p>
+            <p><strong>Direito de Uso e Exclusividade:</strong> O conteúdo, design e as soluções disponibilizadas neste site possuem proteção autoral e direitos de uso exclusivos da La More Eventos. É vedada a reprodução e uso não-autorizado.</p>
+            <p><strong>Aviso de Proteção de Dados (LGPD):</strong> Valorizamos e respeitamos seus dados. De acordo com a Lei Geral de Proteção de Dados (Lei nº 13.709/18), asseguramos que os dados cadastrados neste site serão usados unicamente para nosso contato com você para apresentar nossos serviços.</p>
             <p class="copyright">&copy; 2026 La More Eventos. Todos os direitos reservados.</p>
         </div>
     </footer>
