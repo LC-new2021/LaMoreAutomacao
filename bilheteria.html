@@ -9,8 +9,66 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css?v=25">
+    <link rel="stylesheet" href="style.css?v=30">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        :root {
+            --orange-vibrant: #ff5500;
+            --orange-light: #ff7700;
+            --orange-badge: #ff8c38;
+        }
+
+        body {
+            background-image: 
+                radial-gradient(circle at 15% 50%, rgba(59, 130, 246, 0.15), transparent 40%),
+                radial-gradient(circle at 85% 30%, rgba(255, 85, 0, 0.15), transparent 40%);
+        }
+
+        .blob2 {
+            background: var(--orange-vibrant) !important;
+        }
+
+        .logo-gradient, .hero-content h1 span, .footer-logo-text .logo-gradient {
+            background: linear-gradient(135deg, #3b82f6, var(--orange-vibrant)) !important;
+            -webkit-background-clip: text !important;
+            -webkit-text-fill-color: transparent !important;
+        }
+
+        .btn-gradient {
+            background: linear-gradient(135deg, #3b82f6, var(--orange-vibrant)) !important;
+            box-shadow: 0 8px 25px rgba(255, 85, 0, 0.35) !important;
+        }
+
+        .btn-gradient:hover {
+            box-shadow: 0 12px 30px rgba(255, 85, 0, 0.5) !important;
+        }
+
+        .glow-border::before {
+            background: linear-gradient(135deg, rgba(59,130,246,0.6), rgba(255,85,0,0.6)) !important;
+        }
+
+        .badge-orange {
+            background: rgba(255, 85, 0, 0.15) !important;
+            color: var(--orange-badge) !important;
+            border-color: rgba(255, 85, 0, 0.4) !important;
+        }
+
+        .icon-orange {
+            background: rgba(255, 85, 0, 0.15) !important;
+            color: var(--orange-vibrant) !important;
+            border: 1px solid rgba(255, 85, 0, 0.35) !important;
+        }
+
+        .highlight-card-orange {
+            border-color: rgba(255, 85, 0, 0.4) !important;
+        }
+
+        .highlight-card-orange:hover {
+            border-color: rgba(255, 85, 0, 0.7) !important;
+            box-shadow: 0 15px 35px -10px rgba(255, 85, 0, 0.3);
+        }
+    </style>
 </head>
 <body>
     <!-- Background Animation -->
@@ -47,7 +105,7 @@
         <!-- Hero Section -->
         <section class="hero">
             <div class="hero-content fadeIn">
-                <span class="badge" style="background: rgba(59, 130, 246, 0.2); color: #93c5fd; border-color: rgba(59, 130, 246, 0.4);">
+                <span class="badge" style="background: rgba(255, 85, 0, 0.15); color: #ff8c38; border-color: rgba(255, 85, 0, 0.4);">
                     <i class="fa-solid fa-person-running"></i> A Nova Era das Inscrições &amp; Ingressos
                 </span>
                 <h1>Plataforma de <span>Bilheteria &amp; Corridas de Rua</span></h1>
@@ -61,7 +119,7 @@
                         <span>Corridas de Rua &amp; Esportes</span>
                     </div>
                     <div class="stat-item">
-                        <i class="fa-solid fa-shirt" style="color: #ec4899;"></i>
+                        <i class="fa-solid fa-shirt" style="color: #ff5500;"></i>
                         <span>Gestão de Kits &amp; Camisetas</span>
                     </div>
                     <div class="stat-item">
@@ -69,7 +127,7 @@
                         <span>Chip Timing Export</span>
                     </div>
                     <div class="stat-item">
-                        <i class="fa-solid fa-bolt" style="color: #fbbf24;"></i>
+                        <i class="fa-solid fa-bolt" style="color: #ff7700;"></i>
                         <span>PIX &amp; Cartão em até 12x</span>
                     </div>
                 </div>
@@ -131,7 +189,7 @@
             <div class="impact-bg-glow"></div>
             
             <div style="text-align: center; max-width: 800px; margin: 0 auto 3.5rem; padding: 0 1.5rem;">
-                <span class="badge badge-blue"><i class="fa-solid fa-medal"></i> Foco Total no Esporte</span>
+                <span class="badge badge-orange"><i class="fa-solid fa-medal"></i> Foco Total no Esporte</span>
                 <h2 style="font-size: clamp(2rem, 4vw, 3rem); color: #fff; margin-bottom: 1rem;">Desenvolvido Sob Medida para Organizadores de Corridas</h2>
                 <p style="color: var(--text-muted); font-size: 1.15rem; line-height: 1.6;">
                     Acabe com as planilhas manuais e problemas com tamanhos de camisetas esgotados. A La More Bilheteria entrega um fluxo impecável do cadastro à linha de chegada.
@@ -155,8 +213,8 @@
                 </div>
 
                 <!-- Card 2 -->
-                <div class="glass-card feature-card highlight-card">
-                    <div class="feature-icon icon-pink">
+                <div class="glass-card feature-card highlight-card-orange">
+                    <div class="feature-icon icon-orange">
                         <i class="fa-solid fa-users-rectangle"></i>
                     </div>
                     <h3>Painel de Assessorias &amp; Grupos</h3>
@@ -197,8 +255,8 @@
                 </div>
 
                 <!-- Card 5 -->
-                <div class="glass-card feature-card">
-                    <div class="feature-icon icon-pink">
+                <div class="glass-card feature-card highlight-card-orange">
+                    <div class="feature-icon icon-orange">
                         <i class="fa-solid fa-ticket"></i>
                     </div>
                     <h3>Shows, Festas &amp; Eventos Tradicionais</h3>
@@ -211,7 +269,7 @@
                 </div>
 
                 <!-- Card 6 -->
-                <div class="glass-card feature-card highlight-card" style="border-color: rgba(59,130,246,0.35);">
+                <div class="glass-card feature-card" style="border-color: rgba(59,130,246,0.35);">
                     <div class="feature-icon icon-blue">
                         <i class="fa-solid fa-cash-register"></i>
                     </div>
@@ -230,7 +288,7 @@
         <!-- SEÇÃO: COMPARATIVO VS CONCORRENTES -->
         <section class="features-section" style="padding: 5rem 0 3rem;">
             <div class="features-header">
-                <span class="badge badge-pink">Vantagem Competitiva Real</span>
+                <span class="badge badge-orange"><i class="fa-solid fa-bolt"></i> Vantagem Competitiva Real</span>
                 <h2>Por Que Mudar para a La More Bilheteria?</h2>
                 <p>Compare e veja porque grandes organizadores e assessorias estão migrando para a nossa tecnologia.</p>
             </div>
@@ -241,7 +299,7 @@
                         <tr style="background: rgba(30,58,138,0.4); border-bottom: 1px solid var(--glass-border);">
                             <th style="padding: 1.25rem 1.5rem; color: #fff; font-size: 1.05rem;">Recurso / Benefício</th>
                             <th style="padding: 1.25rem 1.5rem; color: #94a3b8; font-size: 1.05rem;">Portais Tradicionais (Sympla/Ticket Sports)</th>
-                            <th style="padding: 1.25rem 1.5rem; color: #60a5fa; font-size: 1.1rem; font-weight: 800;"><i class="fa-solid fa-star" style="color: #fbbf24;"></i> La More Bilheteria</th>
+                            <th style="padding: 1.25rem 1.5rem; color: #ff8c38; font-size: 1.1rem; font-weight: 800;"><i class="fa-solid fa-star" style="color: #ff5500;"></i> La More Bilheteria</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -280,8 +338,8 @@
             </div>
         </section>
 
-        <!-- CTA FINAL -->
-        <section style="margin: 4rem 0 2rem; text-align: center; background: linear-gradient(135deg, rgba(30,58,138,0.3), rgba(236,72,153,0.3)); border: 1px solid rgba(255,255,255,0.1); border-radius: 28px; padding: 4rem 2rem;">
+        <!-- CTA FINAL COM GRADIENTE LARANJA ENERGÉTICO -->
+        <section style="margin: 4rem 0 2rem; text-align: center; background: linear-gradient(135deg, rgba(30,58,138,0.35), rgba(255,85,0,0.3)); border: 1px solid rgba(255,85,0,0.3); border-radius: 28px; padding: 4rem 2rem; box-shadow: 0 10px 40px -10px rgba(255,85,0,0.25);">
             <h2 style="font-size: clamp(2rem, 4vw, 2.8rem); color: #fff; margin-bottom: 1rem;">Pronto para Elevar o Nível do Seu Evento?</h2>
             <p style="color: var(--text-muted); font-size: 1.15rem; max-width: 650px; margin: 0 auto 2.5rem; line-height: 1.6;">
                 Junte-se aos produtores e diretores de prova que escolheram modernidade, menores taxas e total controle em tempo real.
