@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assinatura Digital Executiva — Grupo La More</title>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            background-color: #080c14;
+            color: #f1f5f9;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem 1rem;
+        }
+        .container {
+            max-width: 640px;
+            width: 100%;
+            text-align: center;
+        }
+        .badge {
+            display: inline-block;
+            background: rgba(245, 158, 11, 0.15);
+            border: 1px solid rgba(245, 158, 11, 0.4);
+            color: #fde68a;
+            padding: 6px 14px;
+            border-radius: 999px;
+            font-size: 0.85rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        h1 {
+            font-size: 1.8rem;
+            font-weight: 800;
+            margin-bottom: 0.5rem;
+            background: linear-gradient(135deg, #f59e0b, #ec4899, #38bdf8);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        p.subtitle {
+            color: #94a3b8;
+            font-size: 0.95rem;
+            margin-bottom: 1.5rem;
+        }
+        .card-container {
+            background: #ffffff;
+            border-radius: 20px;
+            padding: 2rem 1.5rem;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.5);
+            margin-bottom: 1.5rem;
+            text-align: left;
+        }
+        .btn-copy {
+            background: linear-gradient(135deg, #10b981, #059669);
+            color: #ffffff;
+            border: none;
+            padding: 14px 28px;
+            border-radius: 12px;
+            font-size: 1.05rem;
+            font-weight: 800;
+            cursor: pointer;
+            box-shadow: 0 8px 25px rgba(16, 185, 129, 0.35);
+            transition: all 0.2s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: 1.5rem;
+        }
+        .btn-copy:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 12px 30px rgba(16, 185, 129, 0.5);
+        }
+        .instructions {
+            background: rgba(15, 23, 42, 0.8);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 16px;
+            padding: 1.25rem 1.5rem;
+            text-align: left;
+            font-size: 0.9rem;
+            color: #cbd5e1;
+            line-height: 1.6;
+        }
+        .instructions ol {
+            margin-left: 1.2rem;
+            margin-top: 0.5rem;
+        }
+        .instructions li {
+            margin-bottom: 0.4rem;
+        }
+        .toast {
+            display: none;
+            position: fixed;
+            bottom: 2rem;
+            left: 50%;
+            transform: translateX(-50%);
+            background: #10b981;
+            color: white;
+            padding: 12px 24px;
+            border-radius: 10px;
+            font-weight: 700;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+            z-index: 999;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <span class="badge">Diretoria Executiva</span>
+        <h1>Assinatura Cartão Digital Oficial</h1>
+        <p class="subtitle">Pronta para copiar com formatação rica e colar no Zoho Mail</p>
+
+        <button class="btn-copy" id="copyBtn" onclick="copySignature()">
+            📋 Copiar Assinatura Formatada
+        </button>
+
+        <div class="card-container" id="signature-area">
+            <!-- INÍCIO ASSINATURA EXECUTIVA -->
+            <table cellpadding="0" cellspacing="0" border="0" style="width: 100%; max-width: 560px; font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif; background-color: #0b132b; background-image: linear-gradient(135deg, #070c1e 0%, #0f1c3f 50%, #08122c 100%); border-radius: 18px; border: 1.5px solid #d97706; box-shadow: 0 10px 30px rgba(0,0,0,0.35); overflow: hidden; color: #ffffff;">
+                <tr>
+                    <td style="padding: 22px 24px;">
+                        
+                        <!-- Topo: Logo Oficial e Identificação -->
+                        <table cellpadding="0" cellspacing="0" border="0" style="width: 100%; margin-bottom: 16px;">
+                            <tr>
+                                <td style="vertical-align: middle;">
+                                    <table cellpadding="0" cellspacing="0" border="0">
+                                        <tr>
+                                            <td style="background: rgba(255, 255, 255, 0.08); border: 1px solid rgba(217, 119, 6, 0.4); border-radius: 10px; padding: 5px 9px;">
+                                                <img src="https://bilheteria.grupolamore.com.br/logo.png" alt="Grupo La More" style="height: 36px; width: auto; max-width: 140px; display: block; border: 0;" />
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                                <td style="text-align: right; vertical-align: middle;">
+                                    <div style="font-size: 15px; font-weight: 900; color: #ffffff; letter-spacing: 0.5px; text-transform: uppercase;">
+                                        GRUPO <span style="color: #f59e0b;">LA MORE</span>
+                                    </div>
+                                    <div style="font-size: 8.5px; font-weight: 800; color: #93c5fd; letter-spacing: 1.5px; text-transform: uppercase; margin-top: 1px;">
+                                        CARTÃO EXECUTIVO DIGITAL
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+
+                        <!-- Centro: Titular e Cargo -->
+                        <table cellpadding="0" cellspacing="0" border="0" style="width: 100%; margin-bottom: 14px;">
+                            <tr>
+                                <td>
+                                    <div style="font-size: 9.5px; font-weight: 800; color: #d97706; letter-spacing: 1px; text-transform: uppercase; margin-bottom: 2px;">
+                                        DIRETORIA EXECUTIVA
+                                    </div>
+                                    <div style="font-size: 20px; font-weight: 900; color: #fef08a; letter-spacing: 0.2px; line-height: 1.2;">
+                                        LEONARDO CAVALCANTTI
+                                    </div>
+                                    <div style="font-size: 11.5px; font-weight: 600; color: #94a3b8; margin-top: 2px;">
+                                        CEO &amp; Diretor Geral
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+
+                        <!-- Divisória Dourada -->
+                        <div style="height: 1px; background: linear-gradient(90deg, #d97706 0%, rgba(217, 119, 6, 0.2) 100%); margin-bottom: 12px;"></div>
+
+                        <!-- Rodapé: Contatos e Badge -->
+                        <table cellpadding="0" cellspacing="0" border="0" style="width: 100%;">
+                            <tr>
+                                <td style="vertical-align: bottom;">
+                                    <div style="font-size: 11px; color: #e2e8f0; margin-bottom: 5px;">
+                                        <span style="color: #60a5fa;">✉️</span> <a href="mailto:diretoria@grupolamore.com.br" style="color: #ffffff; text-decoration: none; font-weight: 700;">diretoria@grupolamore.com.br</a>
+                                        &nbsp;&nbsp;|&nbsp;&nbsp;
+                                        <span style="color: #34d399;">💬</span> <a href="https://wa.me/5561993688095" target="_blank" style="color: #ffffff; text-decoration: none; font-weight: 700;">(61) 99368-8095</a>
+                                    </div>
+                                    <div style="font-size: 11px; color: #e2e8f0;">
+                                        <span style="color: #f59e0b;">🌐</span> <a href="https://grupolamore.com.br" target="_blank" style="color: #fde68a; text-decoration: none; font-weight: 700;">grupolamore.com.br</a>
+                                        &nbsp;&nbsp;|&nbsp;&nbsp;
+                                        <span style="color: #38bdf8;">🎫</span> <a href="https://bilheteria.grupolamore.com.br" target="_blank" style="color: #93c5fd; text-decoration: none; font-weight: 700;">bilheteria.grupolamore.com.br</a>
+                                    </div>
+                                </td>
+                                <td style="text-align: right; vertical-align: bottom; width: 105px;">
+                                    <table cellpadding="0" cellspacing="0" border="0" style="display: inline-block; background: rgba(217, 119, 6, 0.15); border: 1px solid #d97706; border-radius: 8px; padding: 4px 7px; text-align: center;">
+                                        <tr>
+                                            <td>
+                                                <div style="font-size: 7.5px; font-weight: 900; color: #fde68a; letter-spacing: 0.5px; text-transform: uppercase;">
+                                                    AUTENTICADO
+                                                </div>
+                                                <div style="font-size: 7px; font-weight: 700; color: #93c5fd; text-transform: uppercase;">
+                                                    ECOSSISTEMA 360°
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+
+                    </td>
+                </tr>
+            </table>
+            <!-- FIM ASSINATURA -->
+        </div>
+
+        <div class="instructions">
+            <strong>Como colar no Zoho Mail em 3 passos:</strong>
+            <ol>
+                <li>Clique no botão verde acima <strong>"Copiar Assinatura Formatada"</strong> (ou selecione o cartão com o mouse e aperte <code>Ctrl + C</code>).</li>
+                <li>No Zoho Mail, apague todo o código/texto que está na caixa de edição da assinatura e aperte <strong><code>Ctrl + V</code></strong>. O cartão aparecerá pronto e visualmente perfeito!</li>
+                <li>Clique no botão amarelo <strong>Atualizar</strong> ou <strong>Salvar</strong> no Zoho. Pronto!</li>
+            </ol>
+        </div>
+    </div>
+
+    <div class="toast" id="toast">✅ Assinatura copiada! Agora basta dar Ctrl + V no Zoho Mail.</div>
+
+    <script>
+        function copySignature() {
+            const card = document.getElementById('signature-area');
+            const range = document.createRange();
+            range.selectNodeContents(card);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            
+            try {
+                document.execCommand('copy');
+                selection.removeAllRanges();
+                const toast = document.getElementById('toast');
+                toast.style.display = 'block';
+                setTimeout(() => { toast.style.display = 'none'; }, 4000);
+            } catch (err) {
+                alert('Selecione o cartão com o mouse e aperte Ctrl + C');
+            }
+        }
+    </script>
+</body>
+</html>
